@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.10.xsd">
+
+<changeSet id="insert-pets" author="your_name">
+    <insert tableName="pet">
+        <column name="id" valueNumeric="1"/>
+        <column name="name" value="Fluffy"/>
+        <column name="identification_code" value="A123"/>
+        <column name="fur_color" value="white"/>
+        <column name="type_id" valueNumeric="1"/>
+    </insert>
+</changeSet>
+
+</databaseChangeLog>
